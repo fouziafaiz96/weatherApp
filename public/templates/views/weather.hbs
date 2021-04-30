@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Weather App</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <div class="col-md-4 col-12 header_right align-items-center">
+              <div class="main-div w-100">
+                <form class="w-100">
+                  <div class="mb-3">
+                    <label class="form-label">Enter city</label>
+                    <input
+                      type="text"
+                      class="form-control h-25"
+                      id="search-input"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Results</label
+                    >
+                    <div class="result-div">
+                      <p class="error-msg"></p>
+                      <h4 id="result-msg" class="result"></h4>
+                      <h4 id="result-status" class="result"></h4>
+                    </div>
+                    <button
+                      class="btn btn-primary mt-4 btn-lg"
+                      id="search-btn"
+                      type="submit"
+                    >
+                      Search
+                    </button>
+                    <a href="/" class="btnDesign">Go Back</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{>footer}}
+    <script src="js/main.js"></script>
+  </body>
+</html>

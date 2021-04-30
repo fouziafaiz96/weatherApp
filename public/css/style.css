@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Piazzolla";
+}
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-menu {
+  background-color: var(--main-bg);
+}
+.navbar {
+  color: #fff;
+  padding: 2rem 0;
+}
+.navbar a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.navbar-toggler {
+  color: #fff;
+}
+.navbar li {
+  margin-left: 20px;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.fa-snowflake {
+  transition: all linear;
+  animation: rot 2s linear infinite;
+  color: var(--main-color);
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.header_left,
+.header_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.header_left p {
+  font-size: 2rem;
+}
+.header_left h1 {
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+.header_left .text-color {
+  color: var(--main-color);
+}
+.header_left button {
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  color: #000 !important;
+}
+.header_right {
+  margin-top: 4%;
+}
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  margin-top: auto;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+figure img {
+  height: 150px;
+}
+figure p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-label {
+  font-size: 2rem;
+}
+.result-div {
+  background-color: var(--main-bg);
+  height: 150px;
+  color: #fff;
+}
+.result {
+  padding: 2%;
+  color: #fff;
+}
+/* .fas {
+  color: var(--main-color);
+} */
+.btnDesign {
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  color: #000 !important;
+  outline: none;
+}
